@@ -9,6 +9,7 @@ body{
     scroll-snap-type: x mandatory;
     white-space: nowrap;
     gap: 16px;
+    overflow-y: hidden;
 }
 .card-container::-webkit-scrollbar {
     height: 16px; 
@@ -16,6 +17,7 @@ body{
 
 .card-container::-webkit-scrollbar-thumb {
     background-color: #888; 
+    border-radius: 25px;
 }
 .card {
     min-width: 400px;
