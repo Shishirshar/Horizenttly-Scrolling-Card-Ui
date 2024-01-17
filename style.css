@@ -12,12 +12,15 @@ body{
     overflow-y: hidden;
 }
 .card-container::-webkit-scrollbar {
-    height: 16px; 
+    height: 5px; 
+    background-color: #cbd5e1;
+    border-radius: 25px;
 }
 
 .card-container::-webkit-scrollbar-thumb {
-    background-color: #888; 
+    background-color: #272626; 
     border-radius: 25px;
+    width: 180px;
 }
 .card {
     min-width: 400px;
