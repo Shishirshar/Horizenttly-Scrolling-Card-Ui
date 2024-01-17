@@ -1,16 +1,26 @@
 /* style Horizontally Scrolling Card Ui */
+body{
+    margin: 0;
+    padding: 20px;
+}
 .card-container {
-    width: 1140px;
-    margin: 0 auto;
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    white-space: nowrap;
     gap: 16px;
+}
+.card-container::-webkit-scrollbar {
+    height: 16px; 
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background-color: #888; 
 }
 .card {
     min-width: 400px;
     padding: 16px;
-    background-color: #f0f0f0;
+    background-color: #cfb4b4;
     border-radius: 8px;
     scroll-snap-align: start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -27,6 +37,7 @@
 .card-description {
     font-size: 14px;
     color: #555;
+    white-space: normal;
 }
 .card-description-container {
     max-height: 100px; 
